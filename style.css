@@ -1,0 +1,48 @@
+body {
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ 
+h1 {
+    color: blueviolet;
+}
+ 
+form {
+    background-color: blanchedalmond;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 2);
+}
+ 
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+ 
+input[type="text"], input[type="email"], textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 5px solid #ccc;
+    border-radius: 30px;
+}
+ 
+button [type="submit"] {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+ 
+button [type="submit"]:hover {
+    background-color: green;
+}
+
