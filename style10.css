@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #2b2b2b;
+    background-color: #f7f3ec;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+h1,
+h2 {
+    color: #084d6b;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.tiers {
+    width: 30%;
+}
+
+.large {
+    width: 62%;
+}
+
+.etroit {
+    width: 32%;
+}
+
+.bloc {
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.bloc-gauche {
+    float: left;
+}
+
+.bloc-droite {
+    float: right;
+}
+
+.bloc-millieu {
+    float: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bloc-marseille {
+    background-color: #d9eef7;
+}
+
+.bloc-marseille h3 {
+    color: #0b6e99;
+}
+
+.bloc-nice {
+    background-color: #fde8d4;
+}
+
+.bloc-nice h3 {
+    color: #c4631a;
+}
+
+.bloc-montpellier {
+    background-color: #ffcae2;
+}
+
+.bloc-montpellier h3 {
+    color: #f35994;
+}
+
+.bloc-offre {
+    background-color: #e3f3e8;
+}
+
+.bloc-offre h3 {
+    color: #1f7a45;
+}
+
+.bloc-promo {
+    background-color: #e8833a;
+    color: white;
+}
+
+.bloc-promo h3 {
+    color: white;
+}
+
+.remise {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bloc {
+    border: 2px solid #999;
+    border-radius: 15px;
+}
+
+.bloc-marseille {
+    border-color: #0b6e99;
+}
+
+.bloc-nice {
+    border-color: #c4631a;
+}
+
+.bloc-montpellier {
+    border-color: #f35994;
+}
+
+.bloc-offre {
+    border-color: #1f7a45;
+}
+
+.bloc-promo {
+    border-color: #a8561a;
+}
+
+.bloc {
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.bloc h3 {
+    margin-bottom: 12px;
+}
+
+.bloc img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.bloc .img-gauche {
+    float: left;
+    width: 45%;
+    margin: 0 18px 10px 0;
+}
+
+.bloc p {
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: #0b6e99;
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo {
+    float: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #e8833a;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e8833a;
+    text-decoration: underline;
+}
+
+footer {
+    clear: both;
+    background-color: #084d6b;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer address {
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.rangee {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bloc:hover {
+    box-shadow: 6px 10px 18px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 700px) {
+
+    .tiers,
+    .large,
+    .etroit {
+        width: 100%;
+    }
+
+    .bloc-gauche,
+    .bloc-droite {
+        float: none;
+    }
+
+    .logo,
+    nav {
+        float: none;
+        text-align: center;
+    }
+}
+
+/* On utilise le float: none pour annuler le flottement du bloc montpellier */
+/* On utilise @media pour forcer l'adaptation à la taille de l'écran (par exemple un écran de téléphone) pour que la page soit lisible */
+
+
+/* Questions de synthèse */
+
+/* 1 */
+/* Un élément de type bloc prendra toute la largeur disponible tandis qu'un élément de type ligne ne prend que la largeur requise pour son contenu */
+/* 3 exemples de type bloc */
+/* <header> , <footer> , <section> */
+/* 3 exemples de type ligne */
+/* <a> , <span> , <strong> */
+
+/* 2 */
+/* float: left décale l'élément le plus à gauche possible à l'intérieur de son conteneur. */
+/* "Le parent perd sa hauteur car les blocs en float ne le remplissent plus de façon classique." */
+
+/* 3 */
+/* clear: both empêche un élément de se placer à côté d'éléments qui flottent. */
+/* clearfix sert à résoudre le problème de l'effondrement du parent en obligeant le conteneur parent à reprendre toute sa hauteur pour réintégrer ses enfants flottants. */
+
+/* 4 */
+/* Un élément ne peut avoir qu'un seul ID mais il peut avoir plusieurs classes */
+/* On utilise une classe pour appliquer du style CSS partagé et réutilisable */
+/* On utilise un ID pour identifier de façon unique un élément */
+
+/* 5 */
+/* box-shadow permet d'ajouter une ombre portée à un élément pour créer un effet de relief et de profondeur. */
+/* 4px : décalage horizontal de l'ombre vers la droite */
+/* 6px : décalage vertical de l'ombre vers le bas */
+/* 12px : rayon de flou */
+/* rgba(0,0,0,0.25) : couleur noire avec 25% d'opacité */
+
+/* 6 */
+/* Avec border-box, le padding et les bordures sont inclus dans la largeur. */
+
+/* 7 */
+/* L'intérêt est de combiner plusieurs petits styles au lieu de répéter du code CSS : une classe pour l'aspect général, une pour la couleur, une pour le côté et une pour la taille. */
